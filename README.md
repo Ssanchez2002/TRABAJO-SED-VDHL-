@@ -1,1 +1,2 @@
 --PRIMERO AÑADIMOS LE ARCHIVO GITIGNORE DE MOODLE PARA PODER IGNORAR LOS ARCHIVOS TEMPORALES DE VIVADO
+--Después de revisar la estructura del trabajo se ha decidido hacer un acmbio y crear una entidad que gestione la suma y reesta del dinero "DINERO"
