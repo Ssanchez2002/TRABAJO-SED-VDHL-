@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../TRABAJO_SED_OPERATIVO_10_01.srcs/sources_1/new/temporizador.vhd" \
+"../../../../TRABAJO_SED_OPERATIVO_10_01.srcs/sim_1/new/temp_tb.vhd" \
+
+# Do not sort compile order
+nosort

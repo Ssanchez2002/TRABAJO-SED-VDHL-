@@ -1,4 +1,0 @@
-Time resolution is 1 ps
-Failure: [SUCCESS]: simulation finished.
-Time: 102500 ps  Iteration: 0  Process: /e23_fsm_tb/stim_proc  File: C:/Users/Usuario/OneDrive/Escritorio/SED/P3/P3.srcs/sim_1/new/fsm_tb.vhd
-$finish called at time : 102500 ps : File "C:/Users/Usuario/OneDrive/Escritorio/SED/P3/P3.srcs/sim_1/new/fsm_tb.vhd" Line 92

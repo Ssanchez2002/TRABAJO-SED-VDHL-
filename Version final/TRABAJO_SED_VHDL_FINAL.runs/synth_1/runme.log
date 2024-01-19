@@ -1,0 +1,320 @@
+
+*** Running vivado
+    with args -log TOP1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP1.tcl
+
+
+ECHO est  desactivado.
+ECHO est  desactivado.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source TOP1.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 468.250 ; gain = 201.492
+WARNING: [Vivado 12-9135] Ignoring repo path (C:/Users/Usuario/OneDrive/Escritorio/TRABAJO C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.runs/synth_1/SED C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.runs/synth_1/CON C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.runs/synth_1/PAGAR/TRABAJO C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.runs/synth_1/SED C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.runs/synth_1/CON C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.runs/synth_1/PAGAR.board) because it contains no board files
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/utils_1/imports/synth_1/fsm.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/utils_1/imports/synth_1/fsm.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top TOP1 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12876
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1297.656 ; gain = 410.430
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP1' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/TOP1.vhd:43]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/Sincronizador.vhd:24' bound to instance 'sincronizador1' of component 'SYNCHRNZR' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/TOP1.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/Sincronizador.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (0#1) [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/Sincronizador.vhd:31]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/EdgeDetector.vhd:24' bound to instance 'detectorflancos1' of component 'EDGEDTCTR' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/TOP1.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/EdgeDetector.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/EdgeDetector.vhd:31]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/counter.vhd:28' bound to instance 'contador1' of component 'counter' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/TOP1.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/counter.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'counter' (0#1) [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/counter.vhd:35]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/Sincronizador.vhd:24' bound to instance 'sincronizador2' of component 'SYNCHRNZR' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/TOP1.vhd:152]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/EdgeDetector.vhd:24' bound to instance 'detectorflancos2' of component 'EDGEDTCTR' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/TOP1.vhd:157]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/counter.vhd:28' bound to instance 'contador2' of component 'counter' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/TOP1.vhd:162]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/Sincronizador.vhd:24' bound to instance 'sincronizador3' of component 'SYNCHRNZR' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/TOP1.vhd:168]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/EdgeDetector.vhd:24' bound to instance 'detectorflancos3' of component 'EDGEDTCTR' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/TOP1.vhd:173]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/counter.vhd:28' bound to instance 'contador3' of component 'counter' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/TOP1.vhd:178]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/Sincronizador.vhd:24' bound to instance 'sincronizador4' of component 'SYNCHRNZR' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/TOP1.vhd:184]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/EdgeDetector.vhd:24' bound to instance 'detectorflancos4' of component 'EDGEDTCTR' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/TOP1.vhd:189]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/counter.vhd:28' bound to instance 'contador4' of component 'counter' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/TOP1.vhd:194]
+INFO: [Synth 8-3491] module 'fsm' declared at 'C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/FSM.vhd:26' bound to instance 'maquina_estados' of component 'fsm' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/TOP1.vhd:201]
+INFO: [Synth 8-638] synthesizing module 'fsm' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/FSM.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'fsm' (0#1) [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/FSM.vhd:42]
+INFO: [Synth 8-3491] module 'DINERO' declared at 'C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/DINERO.vhd:28' bound to instance 'Dinero1' of component 'Dinero' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/TOP1.vhd:214]
+INFO: [Synth 8-638] synthesizing module 'DINERO' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/DINERO.vhd:44]
+WARNING: [Synth 8-614] signal 'RESET' is read in the process but is not in the sensitivity list [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/DINERO.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'DINERO' (0#1) [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/DINERO.vhd:44]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/Decodificador.vhd:35' bound to instance 'decoder1' of component 'decoder' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/TOP1.vhd:228]
+INFO: [Synth 8-638] synthesizing module 'decoder' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/Decodificador.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'decoder' (0#1) [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/Decodificador.vhd:47]
+INFO: [Synth 8-3491] module 'temporizador' declared at 'C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/temporizador.vhd:26' bound to instance 'temporizador1' of component 'temporizador' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/TOP1.vhd:237]
+INFO: [Synth 8-638] synthesizing module 'temporizador' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/temporizador.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'temporizador' (0#1) [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/temporizador.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'TOP1' (0#1) [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/TOP1.vhd:43]
+WARNING: [Synth 8-7129] Port decod_in3[3] in module decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port decod_in3[2] in module decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port decod_in3[1] in module decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port decod_in3[0] in module decoder is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1390.230 ; gain = 503.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1390.230 ; gain = 503.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1390.230 ; gain = 503.004
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1390.230 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1486.918 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1486.918 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1486.918 ; gain = 599.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1486.918 ; gain = 599.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1486.918 ; gain = 599.691
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 apagado |                            00001 |                              000
+                  espera |                            00010 |                              001
+                   pagar |                            00100 |                              010
+                 espera2 |                            01000 |                              011
+                   listo |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'fsm'
+WARNING: [Synth 8-327] inferring latch for variable 'fsm_out_contador_reg' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/FSM.vhd:68]
+WARNING: [Synth 8-327] inferring latch for variable 'fsm_out_temporizador_reg' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/FSM.vhd:69]
+WARNING: [Synth 8-327] inferring latch for variable 'fsm_out_display_reg' [C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.srcs/sources_1/new/FSM.vhd:67]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1486.918 ; gain = 599.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 7     
+	   3 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	  11 Input    7 Bit        Muxes := 1     
+	   8 Input    7 Bit        Muxes := 1     
+	  15 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 9     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 8     
+	   5 Input    1 Bit        Muxes := 5     
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1486.918 ; gain = 599.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1486.918 ; gain = 599.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1486.918 ; gain = 599.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1486.918 ; gain = 599.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1486.918 ; gain = 599.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1486.918 ; gain = 599.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1486.918 ; gain = 599.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1486.918 ; gain = 599.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1486.918 ; gain = 599.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1486.918 ; gain = 599.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|TOP1        | detectorflancos1/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|TOP1        | detectorflancos2/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|TOP1        | detectorflancos3/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|TOP1        | detectorflancos4/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
++------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    39|
+|3     |LUT1   |     9|
+|4     |LUT2   |    45|
+|5     |LUT3   |    10|
+|6     |LUT4   |    14|
+|7     |LUT5   |    16|
+|8     |LUT6   |    36|
+|9     |SRL16E |     4|
+|10    |FDCE   |    88|
+|11    |FDPE   |     6|
+|12    |FDRE   |    41|
+|13    |LD     |     3|
+|14    |IBUF   |     9|
+|15    |OBUF   |    20|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1486.918 ; gain = 599.691
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:34 . Memory (MB): peak = 1486.918 ; gain = 503.004
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1486.918 ; gain = 599.691
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1486.918 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 42 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1486.918 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  LD => LDCE: 3 instances
+
+Synth Design complete | Checksum: 3319d1be
+INFO: [Common 17-83] Releasing license: Synthesis
+55 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1486.918 ; gain = 993.793
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Usuario/OneDrive/Escritorio/SED_vdhl_2_01/SED_vdhl_2_01.runs/synth_1/TOP1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP1_utilization_synth.rpt -pb TOP1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 10 13:10:18 2024...
